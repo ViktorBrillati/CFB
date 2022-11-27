@@ -21,6 +21,6 @@ app.get('/volunteer', (req,res) => {
     res.render('volunteer');
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
     console.log(`App listening on port ${port}`);
 });
