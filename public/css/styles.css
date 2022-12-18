@@ -23,9 +23,6 @@
 .content h1 {
     text-decoration: underline;
 }
-.companyInfo{
-    background-color: #DFD3C3;
-}
 
 /*Navbar*/
 .companyName {
@@ -46,6 +43,14 @@
 }
 .nav-link:hover {
     color:#F8EDE3;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.sticky + .mainbody {
+    padding-top: 60px;
 }
 
 
@@ -75,10 +80,58 @@
     }
 }
 
-/*banner*/
-.responsive {
-    height: auto;
+/*picture carousel*/
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: #F8EDE3;
+}
+.slide img {
+    margin: 0 auto;
+    height: 525px;
+    width: 625px;
+    object-fit: fill;
+}
+.cycle-prev, .cycle-next {
+    position: absolute;
+    top: 50%;
+    background-color: rgba(0,0,0,0.35);
+    color: #fff;
+    padding: 1px 10px;
+    display: block;
+    cursor: pointer;
+    font-size: 130%;
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.cycle-slideshow:hover .cycle-prev, 
+.cycle-slideshow:hover .cycle-next {
+    opacity: 1;
+}
+.cycle-next {
+    right: 0;
+}
+.cycle-pager {
+    position: absolute;
+    top: 20px;
+    z-index: 1003;
     width: 100%;
+    text-align: center;
+}
+.cycle-pager span {
+    text-indent: -9999px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 4px;
+    cursor: pointer;
+}
+.cycle-pager .cycle-pager-active {
+    background-color: #000;
 }
 @media only screen and (max-width:576px) {
     .responsive {
@@ -98,7 +151,11 @@ h2 {
     text-decoration-line: underline;
     padding: 7px;
 }
-ul li {
+.mission ul li {
+    text-align: left;
+    margin: 10px 0;
+}
+.activities ul li {
     text-align: left;
     margin: 10px 0px;
     list-style-type: none;
@@ -113,11 +170,15 @@ h4 {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 30px 0px;
+    background-color: #DFD3C3;
 }
 #info {
     text-align: center;
 }
-
+#info ul li {
+    list-style-type: none;
+    line-height: 2rem;
+}
 @media only screen and (max-width:640px) {
     .companyInfo {
         display: flex;
@@ -125,7 +186,6 @@ h4 {
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 5%;
     }
     #flogo1 {
         display: none;
@@ -139,7 +199,92 @@ h4 {
     }
 }
 
+/*About page*/
+.content {
+    padding-bottom: 150px;
+}
 
+
+/*Donate page */
+/*quote section*/
+.donate {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 200px 30px;
+    background-color: #F8EDE3;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Bahnschrift', sans-serif;
+}
+.quote {
+    margin-bottom: 30px;
+}
+/*Donate button */
+.myButton {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:15px;
+	border:2px solid #333029;
+	display: block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    margin: 30px 0;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+/*Contact page*/
+.contact {
+    background-color: #F8EDE3;
+}
+
+/*Contact Page*/
+
+.formContainer {
+    border-radius: 5px;
+    background-color: #f8ede3;
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+}
+input[type=text], input[type=tel], input[type=email], textarea {
+    width: 100%; /*full width*/
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /*make sure padding and width stays in place*/
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; /*allow the user to vertically resize the textarea*/
+}
+input[type=submit] {
+    background-color: #dfd3c3;
+    color: #000;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #d1af8f;
+    padding: 20px;
+}
 
 
 

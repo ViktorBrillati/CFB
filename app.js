@@ -21,6 +21,20 @@ app.get('/volunteer', (req,res) => {
     res.render('volunteer');
 });
 
+app.get('/donate', (req,res) => {
+    res.render('donate');
+});
+
+app.get('/contact', (req,res) => {
+    res.render('contact');
+});
+app.post('/contact', (req,res) => {
+    
+})
+
+
 app.listen(process.env.PORT || port, () => {
     console.log(`App listening on port ${port}`);
 });
+
+
