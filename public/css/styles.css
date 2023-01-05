@@ -287,7 +287,12 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-
-
-
+/*copyright section*/
+.copyright {
+    margin-bottom: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #DFD3C3;
+    font-size: small;
+}
 
