@@ -17,8 +17,12 @@ app.get('/about', (req, res) => {
     res.render('about');
 });
 
-app.get('/volunteer', (req,res) => {
-    res.render('volunteer');
+app.get('/videos', (req,res) => {
+    res.render('videos');
+});
+
+app.get('/events', (req,res) => {
+    res.render('events');
 });
 
 app.get('/donate', (req,res) => {
