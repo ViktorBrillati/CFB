@@ -43,6 +43,10 @@ app.get("/healthwellness", (req, res) => {
   res.render("healthwellness");
 });
 
+app.get("/resources", (req, res) => {
+  res.render("resources");
+});
+
 
 app.post("/contact", (req, res) => {});
 
