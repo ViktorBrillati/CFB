@@ -219,6 +219,12 @@ h4 {
   width: 100%;
 }
 
+.vidcontainer {
+  margin-bottom: 60px;
+}
+.vidcontainer h1 {
+  padding-bottom: 30px;
+}
 
 
 /*footer*/
