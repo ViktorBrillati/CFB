@@ -164,6 +164,16 @@
   }
 }
 
+/*Survey Section*/
+.surveyh {
+  text-align: center;
+}
+.surveyp {
+  font-size: 2rem;
+  text-align: center !important;
+  margin-bottom: 20px;
+}
+
 .caption {
   text-align: center;
   margin-bottom: 20px;
@@ -226,7 +236,6 @@ h4 {
 .vidcontainer h1 {
   padding-bottom: 30px;
 }
-
 
 /*footer*/
 .companyInfo {
@@ -316,8 +325,6 @@ h4 {
 .contact {
   background-color: #f8ede3;
 }
-
-
 
 .formContainer {
   border-radius: 5px;
